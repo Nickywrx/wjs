@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Microsoft YaHei";
+    height: 2000px;
+}
+a,
+a:hover{
+    color: #666;
+    text-decoration: none;
+}
+ul,
+ol{
+    list-style: none;
+}
+/*微金所头部*/
+/*只能在中屏以上显示 2 5 2 3*/
+.wjs-header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.wjs-header .row>div{
+    border-right: 1px solid #ccc;
+}
+.wjs-header .row>div:last-child{
+    border-right: none;
+}
+.wjs-tel{
+    margin-bottom: 0px;
+}
+
+/*字体图标*/
+@font-face {
+    font-family: wjs;
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^='wjs-icon']{
+    font-family: wjs;
+}
+.wjs-icon-phone::before{
+    content: '\e908';
+}
+.wjs-icon-tel::before{
+    content: '\e909';
+}
+.wjs-icon-logo1::before{
+    content: '\e920';
+}
+.wjs-icon-logo2::before{
+    content: '\e93e';
+}
+.wjs-icon-info::before{
+    content: '\e907';
+}
+.wjs-icon-clock::before{
+    content: '\e906';
+}
+.wjs-icon-vedio::before{
+    content: '\e905';
+}
+.wjs-icon-text::before{
+    content:"\e93e";
+}
+.wjs-icon-E903::before{
+    content: "\e903";
+}
+.wjs-icon-E906::before{
+    content: "\e906";
+}
+.wjs-icon-E905::before{
+    content: "\e905";
+}
+.wjs-icon-E907::before{
+    content: "\e907";
+}
+.wjs-icon-E901::before{
+    content: "\e901";
+}
+.wjs-icon-E900::before{
+    content: "\e900";
+}
+.wjs-icon-E904::before{
+    content: "\e904";
+}
+.wjs-icon-E902::before{
+    content: "\e902";
+}
+.wjs-icon-E906::before{
+    content: "\e906";
+}
+.wjs-icon-new01::before{
+    content: "\e90e";
+}
+.wjs-icon-new02::before{
+    content: "\e90f";
+}
+.wjs-icon-new03::before{
+    content: "\e910";
+}
+.wjs-icon-new04::before{
+    content: "\e911";
+}
+.wjs-icon-partner01::before{
+    content:"\e946";
+}
+.wjs-icon-partner02::before{
+    content: "\e92f";
+}
+.wjs-icon-partner03::before{
+    content: "\e92e";
+}
+.wjs-icon-partner04::before{
+    content: "\e92a";
+}
+.wjs-icon-partner05::before{
+    content: "\e929";
+}
+.wjs-icon-partner06::before{
+    content: "\e931";
+}
+.wjs-icon-partner07::before{
+    content: "\e92c";
+}
+.wjs-icon-partner08::before{
+    content: "\e92b";
+}
+.wjs-icon-partner09::before{
+    content: "\e92d";
+}
+
+
+
+/*注册和登陆*/
+.wjs-header .wjs-reg{
+    padding: 5px 10px;
+    background-color: red;
+    color: #ffffff;
+    border: none;
+}
+.wjs-header .wjs-login{
+    border: none;
+    background-color: #fff;
+}
+
+
+/*微金所导航*/
+
+
+.wjs-navbar {
+    background-color: #f8f8f8;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.wjs-navbar a{
+    height: 80px;
+    line-height: 50px;
+}
+
+.wjs-navbar .navbar-brand span:nth-child(1) {
+    font-size: 50px;
+    color: red;
+    vertical-align: middle;
+
+}
+.wjs-navbar .navbar-brand span:nth-child(2) {
+    font-size: 30px;
+    color: #000;
+    vertical-align: middle;
+
+}
+.wjs-navbar .navbar-brand:hover,
+.wjs-navbar .navbar-brand:focus {
+    color: #5e5e5e;
+}
+
+.wjs-navbar .navbar-nav > li > a {
+    line-height: 50px;
+    height: 80px;
+}
+.wjs-navbar .navbar-nav > li > a:hover,
+.wjs-navbar .navbar-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom: 3px solid red;
+}
+.wjs-navbar .navbar-nav > .active > a,
+.wjs-navbar .navbar-nav > .active > a:hover,
+.wjs-navbar .navbar-nav > .active > a:focus {
+    border-bottom: 3px solid red;
+    background-color: #f8f8f8;
+}
+
+.wjs-navbar .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 22px;
+}
+
+.wjs-navbar .navbar-toggle:hover,
+.wjs-navbar .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.wjs-navbar .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+
+/*微金所轮播图*/
+
+.carousel .pc-img{
+    height: 410px;
+    background-position: center center;
+}
+.carousel .s-img{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 992px) {
+    .wjs-info .container{
+        width: 910px;
+    }
+    .wjs-book .container{
+        width: 910px;
+    }
+}
+
+
+/*微金所信息模块*/
+.wjs-info{
+    /*padding: 30px 0;*/
+}
+.wjs-info .row>div{
+    margin: 20px 0;
+}
+
+.wjs-info .media-left a{
+    font-size: 26px;
+}
+
+
+.wjs-info .media:hover a{
+    color: red;
+}
+
+/*微金所预约模块*/
+.wjs-book{
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.wjs-book .pull-left a{
+    color: red;
+    border-bottom: 1px dashed red;
+}
+.wjs-book .pull-right a:hover{
+    color: red;
+}
+
+.wjs-book span{
+    font-size: 24px;
+}
+
+
+
+
+/*微金所产品模块*/
+.product{
+    padding: 30px 0;
+    background-color: #eee;
+
+
+}
+.product-tabs {
+    border-bottom: 1px solid #ddd;
+}
+.product-tabs > li {
+    float: left;
+
+}
+.product-tabs > li > a {
+    display: block;
+    line-height: 2;
+    border: 1px solid transparent;
+
+}
+.product-tabs > li > a:hover {
+    background-color: transparent;
+
+    border-bottom: 3px solid red;
+}
+.product-tabs > li.active > a,
+.product-tabs > li.active > a:hover,
+.product-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color:transparent;
+    border-bottom: 3px solid red;
+}
+
+
+/*产品内容*/
+.product .tab-content .row>div{
+        height: 170px;
+}
+.product .tab-content .content-in{
+     height: 150px;
+     margin-top: 20px;
+     box-shadow: 0 0 2px 2px #999;
+     background-color: #fff;
+ }
+
+.product .tab-content .content-in.current{
+    background-color: red;
+    color: #fff;
+}
+
+.product .tab-content .content-in .p-right{
+    height: 150px;
+    width: 108px;
+    position: relative;
+}
+.product .tab-content .content-in .p-right{
+    text-align: center;
+}
+.product .tab-content .content-in .p-right p:nth-child(1){
+    margin-top: 20px;
+
+}
+.product .tab-content .content-in .p-right p:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.product .tab-content .content-in .p-right p:nth-child(3) .bao{
+    border: 1px solid green;
+    color: green;
+    cursor: pointer;
+}
+.product .tab-content .content-in .p-right p:nth-child(3) .guang{
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+.product .tab-content .content-in .p-right p:nth-child(1) span{
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+
+}
+
+.product .tab-content .content-in.current .p-right p:nth-child(1) span{
+    color: #fff;
+}
+
+
+.product .tab-content .content-in .p-right::before,
+.product .tab-content .content-in .p-right::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    background-color: #eee;
+    box-shadow: 0 -2px 2px 0px #999 inset;
+}
+.product .tab-content .content-in .p-right::after{
+    top: auto;
+    bottom: -6px;
+    box-shadow: 0 2px 2px 0px #999 inset;
+}
+
+
+
+.product .tab-content .content-in .p-left{
+    height: 150px;
+    border-right: 1px dashed #ccc;
+    overflow: hidden;
+    position: relative;
+}
+.product .tab-content .content-in.current .p-left::before{
+    content: '\e915';
+    font-family: wjs;
+    position: absolute;
+    left: 0;
+    top: -9px;
+    font-size: 40px;
+
+
+}
+.product .tab-content .content-in .p-left h4{
+    text-align: center;
+}
+.product .tab-content .content-in .p-left>div>p{
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+
+/*微金所新闻*/
+
+.news{
+    padding: 30px 0;
+}
+.news .row h4{
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+.news .row h4::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    right: -6px;
+    bottom: -3px;
+}
+.news .row>div{
+    position: relative;
+}
+.news .line{
+    position: absolute;
+    height: 100%;
+    left: 45px;
+    border-left: 1px dashed #ccc;
+}
+
+/*自己修改*/
+.news-tabs {
+
+}
+.news-tabs > li {
+    float: left;
+    margin-bottom: 50px;
+}
+.news-tabs > li:last-child{
+    margin-bottom: 0;
+}
+
+.news-tabs > li > a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+    border-radius:50%;
+    background-color: #eee;
+    color: red;
+}
+.news-tabs > li > a:hover {
+    background-color: red;
+    color: #fff;
+}
+.news-tabs > li.active > a,
+.news-tabs > li.active > a:hover,
+.news-tabs > li.active > a:focus {
+    background-color: red;
+    color: #fff;
+}
+
+.news .tab-content li{
+    line-height: 50px;
+    font-size: 14px;
+}
+
+@media screen and (max-width:920px ) {
+        .line{
+            display: none;
+        }
+    .news .news-tabs>li{
+        width: 25%;
+        margin-bottom: 0;
+    }
+    .news .tab-content ul li{
+        height: 50px;
+        overflow: hidden;
+    }
+}
+
+/*底部*/
+.footer{
+    padding: 30px 0;
+    background-color: #ccc;
+    text-align: center;
+}
+.footer h4{
+    font-size: 40px;
+    font-family: "Microsoft YaHei";
+}
+.footer ul li{
+    list-style: none;
+    font-size: 60px;
+    display: inline-block;
+    margin: 0 20px;
+}
+.footer ul li a:hover{
+    color: red;
+}
